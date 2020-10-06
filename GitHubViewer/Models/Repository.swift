@@ -15,8 +15,8 @@ struct Repository: Codable {
 }
     
 struct Owner: Codable {
-    var login: String?
-    var avatar_url: String?
+    var login: String
+    var avatar_url: String
 }
 
 

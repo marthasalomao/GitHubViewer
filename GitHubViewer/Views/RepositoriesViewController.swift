@@ -6,6 +6,7 @@
 //  Copyright © 2020 Martha Salomão de Moraes. All rights reserved.
 //
 
+import Kingfisher
 import UIKit
 
 class RepositoriesViewController: UIViewController {
@@ -40,8 +41,10 @@ class RepositoriesViewController: UIViewController {
     
     // MARK: - Methods
     func prepare() {
-//        self.ivUserPicture
-    self.lbUsername.text = repositories[0].owner?.login
+        guard let owner = repositories[0].owner else { return }
+        let url = URL(string: owner.avatar_url)
+        ivUserPicture.kf.setImage(with: url)
+        self.lbUsername.text = owner.login
     }
 }
 

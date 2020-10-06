@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0118810B694781CF469D9D1 /* Pods_GitHubViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F73FAF2501C55A4C682C550C /* Pods_GitHubViewer.framework */; };
 		F50CEEC7251F95E2005E96AD /* ContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50CEEC5251F95E2005E96AD /* ContentsTableViewCell.swift */; };
 		F50CEEC8251F95E2005E96AD /* ContentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F50CEEC6251F95E2005E96AD /* ContentsTableViewCell.xib */; };
 		F522727B2522B50E00495C30 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F522727A2522B50E00495C30 /* Router.swift */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0589FC73C4F8099D057CA3C /* Pods-GitHubViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubViewer.debug.xcconfig"; path = "Target Support Files/Pods-GitHubViewer/Pods-GitHubViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		A1CE5C781862266C47E500E0 /* Pods-GitHubViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubViewer.release.xcconfig"; path = "Target Support Files/Pods-GitHubViewer/Pods-GitHubViewer.release.xcconfig"; sourceTree = "<group>"; };
 		F50CEEC5251F95E2005E96AD /* ContentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsTableViewCell.swift; sourceTree = "<group>"; };
 		F50CEEC6251F95E2005E96AD /* ContentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentsTableViewCell.xib; sourceTree = "<group>"; };
 		F522727A2522B50E00495C30 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		F58F6875251F773C009870BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F58F6877251F773C009870BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5E4B111252270EE00F7F232 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		F73FAF2501C55A4C682C550C /* Pods_GitHubViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +51,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0118810B694781CF469D9D1 /* Pods_GitHubViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F51BA07107E1B2AB43D0BAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F73FAF2501C55A4C682C550C /* Pods_GitHubViewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6B2F7CA9F181A0DC4C938F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0589FC73C4F8099D057CA3C /* Pods-GitHubViewer.debug.xcconfig */,
+				A1CE5C781862266C47E500E0 /* Pods-GitHubViewer.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F50CEEC9251F9718005E96AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +105,8 @@
 			children = (
 				F58F686A251F773C009870BB /* GitHubViewer */,
 				F58F6869251F773C009870BB /* Products */,
+				E6B2F7CA9F181A0DC4C938F4 /* Pods */,
+				5F51BA07107E1B2AB43D0BAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F58F687A251F773C009870BB /* Build configuration list for PBXNativeTarget "GitHubViewer" */;
 			buildPhases = (
+				B0E54EDB8AE54A553E6325B1 /* [CP] Check Pods Manifest.lock */,
 				F58F6864251F773C009870BB /* Sources */,
 				F58F6865251F773C009870BB /* Frameworks */,
 				F58F6866251F773C009870BB /* Resources */,
+				0881CFC9BF06936C75D6A45F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -183,6 +210,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0881CFC9BF06936C75D6A45F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitHubViewer/Pods-GitHubViewer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitHubViewer/Pods-GitHubViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0E54EDB8AE54A553E6325B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitHubViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F58F6864251F773C009870BB /* Sources */ = {
@@ -332,6 +402,7 @@
 		};
 		F58F687B251F773C009870BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0589FC73C4F8099D057CA3C /* Pods-GitHubViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -347,6 +418,7 @@
 		};
 		F58F687C251F773C009870BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1CE5C781862266C47E500E0 /* Pods-GitHubViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
